@@ -1,0 +1,17 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+
+cloud:
+  config:
+    server:
+#      git:
+#        uri:
+#        username:
+#        password:
+      native:
+        search-locations: file://${user.home}/study/properties/
